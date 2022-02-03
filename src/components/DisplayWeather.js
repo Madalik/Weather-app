@@ -34,7 +34,7 @@ export default function DisplayWeather(props) {
       <div className="row">
         <div className="col-md-3 weather-info">
           <p>
-            <b>Wind Speed</b>(km/hr)
+            <b>Wind Speed</b>(km/h)
           </p>
           <h2>{wind_speed}</h2>
         </div>
