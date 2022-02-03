@@ -37,7 +37,8 @@ class App extends React.Component {
             country: res.data.location.country,
             wind_speed: res.data.current.wind_speed,
             pressure: res.data.current.pressure,
-            precip: res.data.current.humidity,
+            precip: res.data.current.precip,
+            humidity: res.data.current.humidity,
             img: res.data.current.weather_icons,
           };
           this.setState({ data: weatherData });
@@ -67,7 +68,8 @@ class App extends React.Component {
         country: res.data.location.country,
         wind_speed: res.data.current.wind_speed,
         pressure: res.data.current.pressure,
-        precip: res.data.current.humidity,
+        precip: res.data.current.precip,
+        humidity: res.data.current.humidity,
         img: res.data.current.weather_icons,
       };
       this.setState({ data: weatherData });
